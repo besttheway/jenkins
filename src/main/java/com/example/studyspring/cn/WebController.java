@@ -3,6 +3,7 @@ package com.example.studyspring.cn;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -24,9 +25,9 @@ public class WebController {
     }
 
     @RequestMapping("getStatus")
-    public String say(HttpServletResponse response) throws IOException {
-
-        return "自动化部署";
+    public String say(HttpServletRequest request) throws IOException {
+        System.out.println("a");
+        return "自动化部署a";
     }
 
 
