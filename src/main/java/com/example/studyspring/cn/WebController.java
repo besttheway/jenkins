@@ -20,7 +20,7 @@ public class WebController {
     @RequestMapping
     public String say(){
 
-        return "i love you";
+        return "i love you too with miaoxueyu";
     }
 
     @RequestMapping("getStatus")
